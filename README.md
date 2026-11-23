@@ -46,9 +46,9 @@ Check it against `SHA256SUMS`, and against its `.asc` signature with the public 
 `jouan.asc`.
 
 ```
-sudo apt install ./lxray_1.1.0_all.deb       # Debian, Ubuntu
-sudo dnf install ./lxray-1.1.0-1.noarch.rpm  # RHEL family, Fedora
-sudo zypper install ./lxray-1.1.0-1.noarch.rpm   # openSUSE, SLES
+sudo apt install ./lxray_1.2.0_all.deb       # Debian, Ubuntu
+sudo dnf install ./lxray-1.2.0-1.noarch.rpm  # RHEL family, Fedora
+sudo zypper install ./lxray-1.2.0-1.noarch.rpm   # openSUSE, SLES
 ```
 
 ## Usage
