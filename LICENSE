@@ -1,0 +1,43 @@
+LXRAY - FREE USE LICENSE
+
+Copyright (c) 2026 El Mehdi Jouan. All rights reserved.
+
+1. GRANT
+   You may install and use LXRAY free of charge, for personal, educational and
+   commercial purposes, on any number of machines that you own or administer.
+
+2. RESTRICTIONS
+   You may not:
+   (a) modify, translate, adapt or create derivative works of LXRAY;
+   (b) reverse engineer, decompile, extract or publish the code of LXRAY, except
+       to the extent that applicable law expressly allows despite this restriction;
+   (c) sell, rent, lease, sublicense or redistribute LXRAY, except that you may
+       pass on the original, unmodified packages obtained from an official source
+       (https://jouan.us/upstream/ or https://github.com/eljouan/lxray), together
+       with this license;
+   (d) remove or alter any copyright notice or this license.
+
+3. SOURCE CODE
+   No source code is provided or licensed. The code of LXRAY remains the exclusive
+   property of the author.
+
+4. DATA
+   LXRAY runs locally. It does not contact the Internet and sends no data to the
+   author or to anyone else. Reports stay on the machine where they are created.
+
+5. OWNERSHIP
+   LXRAY is licensed, not sold. All rights not expressly granted in this license
+   are reserved by the author.
+
+6. NO WARRANTY
+   LXRAY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+   AND NON-INFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH LXRAY OR ITS USE.
+
+8. TERMINATION
+   This license ends automatically if you breach any of its terms. On termination
+   you must stop using LXRAY and delete your copies.
