@@ -1,0 +1,59 @@
+name: Bug report
+description: LXRAY fails, shows a false alert, or the report is wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please check that you use the latest version first: `lxray version`.
+        Security problems go to the Security tab, never here.
+  - type: input
+    id: version
+    attributes:
+      label: LXRAY version
+      description: Output of `lxray version`
+      placeholder: lxray 1.2.0
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Distribution and version
+      description: First lines of `/etc/os-release`
+      placeholder: Debian 12
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How LXRAY was installed
+      options:
+        - apt repository
+        - dnf repository
+        - zypper repository
+        - .deb or .rpm downloaded from Releases
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: root
+    attributes:
+      label: Run as
+      options:
+        - root (sudo)
+        - normal user
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command you ran, what you expected and what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Report summary
+      description: Content of `report/lxray-summary.txt`. It is redacted, but read it before posting.
+      render: text

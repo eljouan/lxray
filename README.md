@@ -50,6 +50,21 @@ sudo zypper install lxray
 The repositories always install the latest version; a system update moves existing
 machines to it.
 
+### Alpine, Arch Linux and other distributions
+
+Without a native package, LXRAY installs from the signed archive. It needs `bash`,
+`python3` and `tar` (Alpine: `apk add bash python3 tar`; Arch: `pacman -S python`).
+
+```
+curl -fsSLO https://github.com/eljouan/lxray/releases/download/v1.2.0/lxray-1.2.0-linux.tar.gz
+tar -xzf lxray-1.2.0-linux.tar.gz
+sudo ./lxray-1.2.0/packaging/install.sh
+sudo lxray deps --install
+```
+
+The archive does not update itself: for a new version, repeat these steps.
+`packaging/uninstall.sh` removes LXRAY.
+
 ### Manual download
 
 Download the package from the [Releases](https://github.com/eljouan/lxray/releases) page.
@@ -128,6 +143,13 @@ exits with code 3 (partial snapshot).
 Collection is read-only. Secrets, MAC addresses, UUIDs and e-mail addresses are redacted
 at collection time unless `--no-redact` is given; add `--redact-ips` to mask IP addresses
 too. Nothing is ever sent anywhere.
+
+## Support and contact
+
+- Report a problem: [open an issue](https://github.com/eljouan/lxray/issues/new/choose).
+- Security problem: see [SECURITY.md](SECURITY.md), never in a public issue.
+- Every change, version by version: [CHANGELOG.md](CHANGELOG.md).
+- Contact: El Mehdi Jouan, **ej@jouan.us**
 
 ## License
 
