@@ -129,6 +129,13 @@ Collection is read-only. Secrets, MAC addresses, UUIDs and e-mail addresses are 
 at collection time unless `--no-redact` is given; add `--redact-ips` to mask IP addresses
 too. Nothing is ever sent anywhere.
 
+## Support and contact
+
+- Report a problem: [open an issue](https://github.com/eljouan/lxray/issues/new/choose).
+- Security problem: see [SECURITY.md](SECURITY.md), never in a public issue.
+- Every change, version by version: [CHANGELOG.md](CHANGELOG.md).
+- Contact: El Mehdi Jouan, **ej@jouan.us**
+
 ## License
 
 Free to use. All rights reserved by El Mehdi Jouan. See [LICENSE](LICENSE).

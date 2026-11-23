@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/eljouan/lxray/security/advisories/new
+    about: Report a vulnerability privately. Never in a public issue.
+  - name: Contact El Mehdi Jouan
+    url: mailto:ej@jouan.us
+    about: Any other question, by e-mail.
+  - name: Documentation and versions
+    url: https://jouan.us/upstream/en/lxray/versions/
+    about: Every version, what changed, and the compatibility matrix.
