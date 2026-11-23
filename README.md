@@ -46,8 +46,9 @@ Check it against `SHA256SUMS`, and against its `.asc` signature with the public 
 `jouan.asc`.
 
 ```
-sudo apt install ./lxray_1.0.0_all.deb           # Debian, Ubuntu
-sudo dnf install ./lxray-1.0.0-1.el8.noarch.rpm  # RHEL family, Fedora
+sudo apt install ./lxray_1.2.0_all.deb       # Debian, Ubuntu
+sudo dnf install ./lxray-1.2.0-1.noarch.rpm  # RHEL family, Fedora
+sudo zypper install ./lxray-1.2.0-1.noarch.rpm   # openSUSE, SLES
 ```
 
 ## Usage
@@ -62,6 +63,17 @@ lxray plugins                  # list the collection modules
 
 Run as root for a complete snapshot. The report is written to
 `/var/tmp/lxray-HOST-DATE/report/lxray-report.html`.
+
+Without root, LXRAY still runs and says exactly what it could not read. Before
+collecting, it tries each protected source (shadow, sudoers, kernel log, journal,
+firewall rules, SMART, LVM, Docker...) and records the result in `access.tsv`. The
+report lists every source it could not read or could only read in part, why, and
+how to read it (`sudo`, or the group that grants access). The checks that depend on
+them are shown as "not evaluated": they never count as passed. Where the kernel
+exposes the same facts without root, LXRAY reads them there: RAID state and disk
+error counters from `/sys`, firewall state from its services and configuration
+files, SSH settings from `sshd_config` and its included files. A run without root
+exits with code 3 (partial snapshot).
 
 ## Privacy
 
