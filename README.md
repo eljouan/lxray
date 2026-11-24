@@ -1,6 +1,9 @@
 # LXRAY
 
-All Linux Flavours Servers Diagnostics.
+**The X-ray for Linux servers.** All Linux Flavours Servers Diagnostics.
+
+L for Linux, XRAY for the X-ray: like a radiograph, LXRAY looks inside a running
+server without touching it, and shows what is healthy, what is failing and why.
 
 LXRAY reads the real state of a Linux server (identity, hardware, CPU and memory,
 storage and RAID, network, firewall, kernel, services, packages, security, logs,
